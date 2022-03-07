@@ -1,0 +1,61 @@
+GET http://localhost:8080/api/tutors
+
+###
+
+GET http://localhost:8080/api/tutors/0d9ea537-61df-4412-8ef6-9583426af355
+
+###
+
+GET http://localhost:8080/api/students
+
+###
+
+GET http://localhost:8080/api/students/00d74417-8e6f-4f93-b4dd-daab56d4d7d9
+
+###
+
+DELETE http://localhost:8080/api/students/3b0425a3-46a3-44aa-b00e-76777125a704
+
+###
+
+GET http://localhost:8080/api/tutors/7edbe2e3-d804-4cfc-b9a4-fc637e91a4c8/students
+
+###
+
+GET http://localhost:8080/api/tutors/7edbe2e3-d804-4cfc-b9a4-fc637e91a4c8/students/301cfd27-8613-4ed3-8acd-b692a628db3e
+
+###
+
+POST http://localhost:8080/api/tutors
+Content-Type: application/json
+
+{
+  "id": "730acf8b-ab26-4a67-bc3d-529d1ea13a31",
+  "name": "Maciej Cos",
+  "subject": "WF",
+  "className": "3G"
+}
+
+###
+
+POST http://localhost:8080/api/tutors/0d9ea537-61df-4412-8ef6-9583426af355/students
+Content-Type: application/json
+
+{
+  "name": "Wojciech Morski",
+  "age": 12,
+  "id": "0d9ea537-61df-4412-8ef6-9583426af355"
+}
+###
+
+PUT http://localhost:8080/api/tutors/0d9ea537-61df-4412-8ef6-9583426af355
+Content-Type: application/json
+
+{
+  "name": "Zuzanna Cos",
+  "className": "8G"
+}
+
+###
+
+DELETE http://localhost:8080/api/tutors/0d9ea537-61df-4412-8ef6-9583426af355

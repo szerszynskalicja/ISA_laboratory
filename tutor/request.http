@@ -1,0 +1,24 @@
+GET http://localhost:8081/api/tutors
+
+###
+
+GET http://localhost:8081/api/tutors/0d9ea537-61df-4412-8ef6-9583426af355
+
+###
+
+DELETE http://localhost:8081/api/tutors/0d9ea537-61df-4412-8ef6-9583426af355
+
+###
+
+POST http://localhost:8081/api/tutors
+Content-Type: application/json
+
+{
+  "id": "0d9ea537-61df-4412-8ef6-9583426af355",
+  "name": "Wojciech Maka",
+  "subject": "Przyroda",
+  "className": "1B"
+}
+
+###
+GET http://localhost:8081/api/tutors/0d9ea537-61df-4412-8ef6-9583426af355/students
